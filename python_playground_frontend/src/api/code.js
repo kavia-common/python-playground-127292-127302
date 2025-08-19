@@ -9,7 +9,7 @@ export async function executeCode({ code, stdin = '' }) {
    * Execute Python code on the backend.
    * Returns { stdout, stderr, exit_code, duration, created_at?, id? }
    */
-  return apiClient.post('/code/execute', { code, stdin });
+  return apiClient.post('/run', { code, stdin });
 }
 
 // PUBLIC_INTERFACE
